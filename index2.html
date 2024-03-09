@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaAppache</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="/assets/css/style2.css"/>
+    <link rel="icon" href="./quitar.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <h1>MaAppache</h1>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link logged-in" id="logout" href="#">Cerrar sesión</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <main class="row w-75 mx-auto" id="task-main-container">
+        <div class="col-md-6" id="task-form-container">
+            <div id="create-tasks">
+                <form id="create-form">
+                    <label id="card-title" for="task-title">Title:</label>
+                    <input type="text" id="task-title" />
+                    <label for="task-content">Content:</label>
+                    <textarea id="task-content" cols="30" rows="5"></textarea>
+                    <button type="submit" id="btn-task-save">Crear tarea</button>
+                </form>
+            </div>
+        </div>
+        <!-- Aquí se mostrarán las tareas -->
+        <div class="col-md-6" id="tasks-container">
+            <!-- Tarea 1 -->
+            <div class="task">
+                <h3>Post 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="actions">
+                    <button class="btn-like"><i class="fas fa-heart"></i> Like</button>
+                    <button class="btn-share"><i class="fas fa-share"></i> Compartir</button>
+                    <button class="btn-save"><i class="fas fa-bookmark"></i> Guardar</button>
+                </div>
+            </div>
+            <!-- Tarea 2 -->
+            <div class="task">
+                <h3>Post 2</h3>
+                <p>Nulla facilisi. Ut eu libero nec nunc ultricies fermentum nec id libero.</p>
+                <div class="actions">
+                    <button class="btn-like"><i class="fas fa-heart"></i> Like</button>
+                    <button class="btn-share"><i class="fas fa-share"></i> Compartir</button>
+                    <button class="btn-save"><i class="fas fa-bookmark"></i> Guardar</button>
+                </div>
+            </div>
+        </div>
+    </main> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
